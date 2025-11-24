@@ -1,22 +1,16 @@
-# EMSE Wintersemester 2025
+# Code Alignment Experiment
 
-Das ist das Default-Projekt für das eigene Experiment. In dem Experiment werden die Zeilen
+This is a small experiment that tests how people read code.
 
+You will see short snippets of code with five variable declarations. Your task is to find **which line contains a type error** (a value that doesn’t match the variable type).
 
-    "Hello, world + random number: " + irgendeine Zufallszahl von 0-9<br>
-    Hier eine zusätzliche HTML Zeile
+The experiment changes:
 
-oder die Zeile
+- **Alignment**: sometimes the `=` signs are aligned, sometimes not
+- **Highlighting**: sometimes values are colored, sometimes not
 
-    "Exit world + random number: " + irgendeine Zufallszahl von 0-9
-  
-ausgegeben. Wenn Hello, word angezeigt wird, soll die Taste [1] gedrückt werden,
-ansonsten die Taste 2.
+You will do several trials, and for each snippet you press the number (1–5) of the line with the error.
 
-- Das File "experimentation_lib.js" ist die verwendete Library. Diese muss nicht angefasst werden.
+The experiment is written in JavaScript using the Nof1 framework and runs in your browser.
 
-- In der Datei "experiment.js" steht der Code, der das Experiment ausmacht. Die Kommentare in der Datei sollten helfen zu verstehen, wo Code angefasst werden muss.
-
-Am Ende des Experiments wird eine csv-Datei ausgegeben, die in der ersten Spalte den Namen der ersten Variablen hat. Die letzte Spalte enthält die gemessene Zeit für jede Aufgabe (Zeit von der Anzeige bis zum Drücken der richtigen Taste)
-
-Wenn ihr an euch Daten gesammlt habt, diese in Jamovi laden, dort eine ANOVA durchführen (abhängige Variable ist die Zeit, unabhängige Variable eure erste Variable).
+At the end, the experiment outputs a CSV file that can be imported into Jamovi for an ANOVA analysis.
